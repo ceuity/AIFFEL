@@ -2,7 +2,6 @@
 
 # How to make?
 
----
 
 일반적으로 딥러닝 기술은 **"데이터 준비 → 딥러닝 네트워크 설계 → 학습 → 테스트(평가)"** 순으로 이루어진다.
 
@@ -308,7 +307,11 @@ print("y_train shape: {}".format(y_train.shape))
 import matplotlib.pyplot as plt
 plt.imshow(x_train[0])
 print('라벨: ', y_train[0])
+```
 
+### 3. 딥러닝 네트워크 설계하기
+
+```python
 # 딥러닝 네트워크 설계
 import tensorflow as tf
 from tensorflow import keras
@@ -329,14 +332,22 @@ model.add(keras.layers.Dense(n_dense, activation='relu'))
 model.add(keras.layers.Dense(3, activation='softmax'))
 
 model.summary()
+```
 
+### 4. 모델 학습하기
+
+```python
 # 모델 학습
 model.compile(optimizer='adam',
              loss='sparse_categorical_crossentropy',
              metrics=['accuracy'])
 
 model.fit(x_train_reshaped, y_train, epochs=n_train_epoch)
+```
 
+### 5. 모델 평가하기
+
+```python
 # 테스트 이미지
 image_dir_path = os.getenv("HOME") + "/aiffel/rock_scissor_paper/test/testset1"
 (x_test, y_test)=load_data(image_dir_path, 300)
@@ -363,3 +374,5 @@ print("test_accuracy: {}".format(test_accuracy))
 총 10명 분량을 train set으로 사용하고 test를 돌렸을 때 가장 잘 나온 결과!
 
 ![image03.png](image03.png)
+
+오늘은 Layer를 추가하지 않고 단순히 Hyperparameter만 조정하여 인식률을 높이는 것을 목표로 했다. 우선 데이터가 부족한 것 같아서 10명 보다 더 많은 데이터를 추가해보면 좋을 것 같다. 아직 첫 모델이라 많이 부족했지만, 그래도 뭔가 목표가 있고 무엇을 해야 하는지 알게 되면 딥러닝이 조금 더 재밌어질 것 같다.
