@@ -307,7 +307,11 @@ print("y_train shape: {}".format(y_train.shape))
 import matplotlib.pyplot as plt
 plt.imshow(x_train[0])
 print('라벨: ', y_train[0])
+```
 
+### 3. 딥러닝 네트워크 설계하기
+
+```python
 # 딥러닝 네트워크 설계
 import tensorflow as tf
 from tensorflow import keras
@@ -328,14 +332,22 @@ model.add(keras.layers.Dense(n_dense, activation='relu'))
 model.add(keras.layers.Dense(3, activation='softmax'))
 
 model.summary()
+```
 
+### 4. 모델 학습하기
+
+```python
 # 모델 학습
 model.compile(optimizer='adam',
              loss='sparse_categorical_crossentropy',
              metrics=['accuracy'])
 
 model.fit(x_train_reshaped, y_train, epochs=n_train_epoch)
+```
 
+### 5. 모델 평가하기
+
+```python
 # 테스트 이미지
 image_dir_path = os.getenv("HOME") + "/aiffel/rock_scissor_paper/test/testset1"
 (x_test, y_test)=load_data(image_dir_path, 300)
