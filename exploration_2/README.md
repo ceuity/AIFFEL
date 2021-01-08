@@ -12,7 +12,7 @@
 
 ## 1. 붓꽃 분류 문제
 
-![./images00.png](./images00.png)
+![image00.png](.images/image00.png)
 
 ### (1) 어떤 데이터를 사용할 것인가?
 
@@ -173,13 +173,13 @@ print(classification_report(y_test, y_pred))
 
 혼동 행렬은 주로 알고리즘 분류 알고리즘의 성능을 시각화 할 수 있는 표이다. 따라서 해당 모델이 True를 얼만큼 True라고 판단했는지, False를 얼만큼 False라고 판단했는지 쉽게 확인할 수 있다.
 
-![./images01.png](./images01.png)
+![image01.png](.images/image01.png)
 
 알고리즘의 성능을 판단할 때에는 어디에 적용되는 알고리즘인가를 먼저 생각한 후에 판단할 수 있다. 예를 들어, 스팸 메일을 분류한다고 할 때, 스팸 메일은 정상 메일로 분류되어도 괜찮지만, 정상 메일은 스팸 메일로 분류되어서는 안된다. 또는 환자의 암을 진단할 때, 음성을 양성으로 진단하는 것 보다 양성을 음성으로 진단하는 것은 큰 문제를 일으킬 수 있다. 따라서 상황에 맞는 지표를 활용할 줄 알아야 한다.
 
 추가로, F1 Score 라는 지표도 있는데, 해당 지표는 Precision과 Recall(Sensitivity)의 조화평균이며, Precision과 Recall이 얼마나 균형을 이루는지 쉽게 알 수 있는 지표이다.
 
-![./images02.png](./images02.png)
+![image02.png](.images/image02.png)
 
 ## 3. 다른 모델 분류해보기
 
