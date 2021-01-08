@@ -373,6 +373,6 @@ print("test_accuracy: {}".format(test_accuracy))
 
 총 10명 분량을 train set으로 사용하고 test를 돌렸을 때 가장 잘 나온 결과!
 
-![image03.png](./imagesimage03.png)
+![image03.png](./images/image03.png)
 
 오늘은 Layer를 추가하지 않고 단순히 Hyperparameter만 조정하여 인식률을 높이는 것을 목표로 했다. 우선 데이터가 부족한 것 같아서 10명 보다 더 많은 데이터를 추가해보면 좋을 것 같다. 아직 첫 모델이라 많이 부족했지만, 그래도 뭔가 목표가 있고 무엇을 해야 하는지 알게 되면 딥러닝이 조금 더 재밌어질 것 같다.
