@@ -92,7 +92,7 @@ plt.show()
 
 Dlib landmark localization
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f18c0f8-16c1-4af9-9061-0dade468ddf2/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8f18c0f8-16c1-4af9-9061-0dade468ddf2/Untitled.png)
+![images](./images/images00.png)
 
 ```bash
 # Dlib 제공 모델 사용
