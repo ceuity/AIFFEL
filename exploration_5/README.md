@@ -28,7 +28,7 @@
 
 연속적인 아날로그 신호 중 가장 단순한 형태인 sin 함수를 수식으로 표현하면 다음과 같다.
 
-$$Asin(2{\pi}ft-{\phi})$$
+<img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{200}&space;Asin(2{\pi}ft-{\phi})" title="Asin(2{\pi}ft-{\phi})" />
 
 ```python
 # 아날로그 신호의 Sampling
@@ -55,8 +55,8 @@ plt.show()
 
 나이키스트-섀넌 표본화에 따르면 Sampling rate는 최대 주파수의 2배 이상을 표본화 주파수로 사용해야 aliasing을 방지할 수 있다고 한다.
 
-$${f_s \ge2f_m} \\
-{T_s} \le {\frac{1}{2f_m}}$$
+<img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{200}&space;{f_s&space;\ge&space;2f_m}" title="{f_s \ge 2f_m}" />
+<img src="https://latex.codecogs.com/png.latex?\inline&space;\dpi{200}&space;{T_s&space;\le&space;\frac{1}{2f_m}}" title="{T_s \le \frac{1}{2f_m}}" />
 
 연속적인 아날로그 신호는 표본화(Sampling), 양자화(Quantizing), 부호화(Encoding)을 거쳐 이진 디지털 신호(Binary Digital Signal)로 변환시켜 인식한다.
 
