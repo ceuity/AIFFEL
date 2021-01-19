@@ -60,7 +60,7 @@ $${f_s \ge2f_m} \\
 
 연속적인 아날로그 신호는 표본화(Sampling), 양자화(Quantizing), 부호화(Encoding)을 거쳐 이진 디지털 신호(Binary Digital Signal)로 변환시켜 인식한다.
 
-![images00.png](./images00.png)
+![images00.png](./images/images00.png)
 
 ### (3) Wave Data 분석
 
@@ -503,7 +503,7 @@ $$ A_k = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)exp(-i\cdot 2\pi\frac{
 
 푸리에 변환 식은 위와 같다. 그러나 이해하기 어려우니 아래 그림으로 보자.
 
-![images02.png](./images02.png)
+![images02.png](./images/images02.png)
 
 ### (2) 오일러 공식
 
@@ -516,11 +516,11 @@ $$ e^{i\theta }=cos\theta + isin\theta \\
 exp(i\cdot 2\pi \frac{k}{T}t)=cos(2\pi \frac{k}{T})+jsin(2\pi \frac{k}{T}) 
 $$
 
-![images03.png](./images03.png)
+![images03.png](./images/images03.png)
 
 푸리에 변환이 끝나면 실수부와 허수부를 가지는 복소수가 얻어진다. 복소수의 절댓값은 Spectrum magnitude(주파수의 강도)라고 부르며, angle은 phase spectrum(주파수의 위상)이라고 부른다.
 
-![images04.png](./images04.png)
+![images04.png](./images/images04.png)
 
 ### (3) STFT(Short Time Fourier Transform)
 
@@ -536,7 +536,7 @@ $$ X(l,k)=\sum_{n=0}^{N-1}\omega (n)x(n+lH)exp^{\frac{-2\pi kn}{N}} $$
 - n은 window size다. window 함수에 들어가는 sample의 양으로 n이 작을수록 low-frequency resolution, high-time resolution을 가지게 되고, n이 길어지면 high-frequency, low-time resolution을 가지게 된다.
 - H는 hop size를 의미한다. window가 겹치는 사이즈이며, 일반적으로 1/4정도를 겹치게 한다.
 
-![images05.png](./images05.png)
+![images05.png](./images/images05.png)
 
 ### (4) Spectrogram 이란?
 
@@ -544,7 +544,7 @@ $$ X(l,k)=\sum_{n=0}^{N-1}\omega (n)x(n+lH)exp^{\frac{-2\pi kn}{N}} $$
 
 wav 데이터를 해석하는 방법 중 하나로, 일정 시간동안 wav 데이터 안의 다양한 주파수들이 얼마나 포함되어 있는 지를 보여준다. STFT를 이용하여 Spectrogram을 그릴 수 있다.
 
-![images06.png](./images06.png)
+![images06.png](./images/images06.png)
 
 - `pip install librosa` : FFT 관련 라이브러리
 
