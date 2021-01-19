@@ -499,7 +499,7 @@ waveform은 음성 데이터를 1차원 시계열 데이터로 해석하는 방�
 
 ---
 
-$$ A_k = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)exp(-i\cdot 2\pi\frac{k}{T}t)dt $$
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{150}&space;A_k&space;=&space;\frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)exp(-i\cdot&space;2\pi\frac{k}{T}t)dt" title="A_k = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)exp(-i\cdot 2\pi\frac{k}{T}t)dt" />
 
 푸리에 변환 식은 위와 같다. 그러나 이해하기 어려우니 아래 그림으로 보자.
 
@@ -511,10 +511,9 @@ $$ A_k = \frac{1}{T}\int_{-\frac{T}{2}}^{\frac{T}{2}}f(t)exp(-i\cdot 2\pi\frac{
 
 아래 cos과 sin은 주기와 주파수를 가지는 주기함수이다. 즉, 푸리에 변환은 입력 signal에 상관 없이 sin, cos과 같은 주기함수들의 합으로 항상 분해가 가능하다.
 
-$$ e^{i\theta }=cos\theta + isin\theta \\
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{150}&space;e^{i\theta&space;}=cos\theta&space;&plus;&space;isin\theta" title="e^{i\theta }=cos\theta + isin\theta" />
  
-exp(i\cdot 2\pi \frac{k}{T}t)=cos(2\pi \frac{k}{T})+jsin(2\pi \frac{k}{T}) 
-$$
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{150}&space;exp(i\cdot&space;2\pi&space;\frac{k}{T}t)=cos(2\pi&space;\frac{k}{T})&plus;jsin(2\pi&space;\frac{k}{T})" title="exp(i\cdot 2\pi \frac{k}{T}t)=cos(2\pi \frac{k}{T})+jsin(2\pi \frac{k}{T})" />
 
 ![images03.png](./images/images03.png)
 
@@ -528,7 +527,7 @@ $$
 
 FFT(Fast Fourier Transform)는 시간의 흐름에 따라 신호의 주파수가 변했을 때, 어느 시간대에 주파수가 변하는지 모른다. 따라서 STFT는 시간의 길이를 나눠서 푸리에 변환을 한다.
 
-$$ X(l,k)=\sum_{n=0}^{N-1}\omega (n)x(n+lH)exp^{\frac{-2\pi kn}{N}} $$
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;\dpi{150}&space;X(l,k)=\sum_{n=0}^{N-1}\omega&space;(n)x(n&plus;lH)exp^{\frac{-2\pi&space;kn}{N}}" title="X(l,k)=\sum_{n=0}^{N-1}\omega (n)x(n+lH)exp^{\frac{-2\pi kn}{N}}" />
 
 - N은 FFT size이고, Window를 얼마나 많은 주파수 밴드로 나누는 가를 의미한다.
 - Duration은 sampling rate를 window로 나눈 값이다. duration은 신호주기보다 5배 이상 길게 잡아야 한다. T(window)=5T(signal). ex) 440Hz의 window size = 5(1/440)
