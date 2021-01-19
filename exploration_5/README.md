@@ -371,7 +371,7 @@ else:
 
 이미지 처리에서 Skip-Connection을 활용한 모델들이 훨씬 안정적으로 높은 성능을 낸다고 한다. 음성처리 모델에도 똑같이 적용할 수 있을까?
 
-![images01.png](./images01.png)
+![images01.png](./images/images01.png)
 
 skip_connection은 concat을 이용한 방식으로 구현된다.
 
