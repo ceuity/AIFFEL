@@ -11,3 +11,4 @@
 |EXPLORATION_3|[카메라 스티커 앱 만들기](./exploration_3)      |2020-01-12|
 |EXPLORATION_4|[영화리뷰 텍스트 감성분석하기](./exploration_4) |2020-01-14|
 |EXPLORATION_5|[음성 단어 데이터 구분해보기](./exploration_5)  |2020-01-19|
+|EXPLORATION_6|[작사가 인공지능 만들기](./exploration_6)       |2020-01-21|
