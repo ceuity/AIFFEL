@@ -14,3 +14,5 @@
 |EXPLORATION_6|[작사가 인공지능 만들기](./exploration_6)        |2020-01-21|
 |EXPLORATION_7|[나랑 닮은 연예인 찾기](./exploration_7)         |2020-01-26|
 |EXPLORATION_8|[다른 아티스트 추천해주기](./exploration_8)      |2020-01-28|
+|EXPLORATION_9|[캐글 경진대회 따라해보기](./exploration_9)      |2020-02-02|
+|EXPLORATION_9|[인물사진 모드로 사진찍기](./exploration_10)     |2020-02-04|
