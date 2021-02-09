@@ -20,7 +20,7 @@
 
 나는 공부를 [ ]에서 빈 칸에는 한다 라는 단어가 들어갈 것이다. 문장에는 앞 뒤 문맥에 따라 통계적으로 많이 사용되는 단어들이 있다. 인공지능이 글을 이해하는 방식도 위와 같다. 문법적인 원리를 통해서가 아닌 수많은 글을 읽게하여 통계적으로 다음 단어는 어떤 것이 올지 예측하는 것이다. 이 방식에 가장 적합한 인공지능 모델 중 하나가 **순환신경망(RNN)**이다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d676c66-3088-4d52-812b-ece110b524fe/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d676c66-3088-4d52-812b-ece110b524fe/Untitled.png)
+![images00.jpg](./images/images00.jpg)
 
 시작은 `<start>`라는 특수한 토큰을 앞에 추가하여 시작을 나타내고, `<end>`라는 토큰을 통해 문장의 끝을 나타낸다.
 
@@ -175,7 +175,7 @@ dataset
 
 이번에 만들 모델의 구조는 다음과 같다.
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6cdd2cf-2659-45a2-89b8-9378c7b49bd7/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f6cdd2cf-2659-45a2-89b8-9378c7b49bd7/Untitled.png)
+![images01.jpg](./images/images01.jpg)
 
 ```python
 # 모델 생성
@@ -475,5 +475,3 @@ generate_text(model, tokenizer, init_sentence="<start> i love", max_len=20)
 - 3회차는 2회차랑 동일한 데이터에 padding 을 post에서 pre로 변경하였다. RNN에서는 뒤에 padding을 넣는 것 보다 앞쪽에 padding을 넣어주는 쪽이 마지막 결과에 paddind이 미치는 영향이 적어지기 때문에 더 좋은 성능을 낼 수 있다고 알고있기 때문이다.
 - 근데 실제로는 pre padding 쪽이 loss가 더 크게 나왔다. 확인해보니 이론상으로는 pre padding이 성능이 더 좋지만 실제로는 post padding쪽이 성능이 더 잘 나와서 post padding을 많이 쓴다고 한다.
 - batch_size를 변경해서 pre padding을 한 번 더 돌려보았더니 같은 조건에서의 post padding 보다 loss가 높았고 문장도 부자연스러웠다. 앞으로는 post padding을 사용해야겠다.
-
-유용한 링크
