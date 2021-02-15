@@ -195,7 +195,7 @@ MF는 평가행렬 R을 P와 Q 두 개의 Feature Matrix로 분해하는 것이�
 
 ![images01](./images/images01.png)
 
-벡터를 잘 만드는 기준은 유저i의 벡터($U_i$)와 아이템j의 벡터($I_j$)를 내적했을 때 유저i가 아이템j에 대해 평가한 수치($M_{ij}$)와 비슷한지 확인하는 것이다.
+벡터를 잘 만드는 기준은 유저i의 벡터![](https://latex.codecogs.com/png.latex?%5Cinline%20U_i)와 아이템j의 벡터![](https://latex.codecogs.com/png.latex?%5Cinline%20I_j)를 내적했을 때 유저i가 아이템j에 대해 평가한 수치![](https://latex.codecogs.com/png.latex?%5Cinline%20M_%7Bij%7D)와 비슷한지 확인하는 것이다.
 
 ![fomula](https://latex.codecogs.com/png.latex?U_i%7B%5Ccdot%7DI_j%20%3D%20M_%7Bij%7D)
 
