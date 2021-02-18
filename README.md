@@ -16,3 +16,4 @@
 |EXPLORATION_8 |[다른 아티스트 추천해주기](./exploration_8)      |2020-01-28|
 |EXPLORATION_9 |[캐글 경진대회 따라해보기](./exploration_9)      |2020-02-02|
 |EXPLORATION_10|[인물사진 모드로 사진찍기](./exploration_10)     |2020-02-04|
+|EXPLORATION_11|[인공지능으로 없는 패션 만들기](./exploration_11) |2020-02-18|
