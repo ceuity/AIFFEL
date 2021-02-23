@@ -15,6 +15,7 @@
 |EXPLORATION_7 |[나랑 닮은 연예인 찾기](./exploration_7)         |2020-01-26|Face Recognition       |
 |EXPLORATION_8 |[다른 아티스트 추천해주기](./exploration_8)      |2020-01-28|Recommendation systems |
 |EXPLORATION_9 |[캐글 경진대회 따라해보기](./exploration_9)      |2020-02-02|Kaggle, Competition    |
-|EXPLORATION_10|[인물사진 모드로 사진찍기](./exploration_10)     |2020-02-04|Segmentation          |
-|EXPLORATION_11|[뉴스 요약봇 만들기](./exploration_11)           |2020-02-16|Text Summarization   |
-|EXPLORATION_12|[인공지능으로 없는 패션 만들기](./exploration_12) |2020-02-18|DCGAN                |
+|EXPLORATION_10|[인물사진 모드로 사진찍기](./exploration_10)     |2020-02-04|Segmentation           |
+|EXPLORATION_11|[뉴스 요약봇 만들기](./exploration_11)           |2020-02-16|Text Summarization     |
+|EXPLORATION_12|[인공지능으로 없는 패션 만들기](./exploration_12) |2020-02-18|DCGAN                  |
+|EXPLORATION_13|[주식 가격 예측하기](./exploration_13)           |2020-02-23|Time Series Data, ARIMA|
