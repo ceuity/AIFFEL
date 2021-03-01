@@ -19,3 +19,4 @@
 |EXPLORATION_11|[뉴스 요약봇 만들기](./exploration_11)           |2020-02-16|Text Summarization     |
 |EXPLORATION_12|[인공지능으로 없는 패션 만들기](./exploration_12) |2020-02-18|DCGAN                  |
 |EXPLORATION_13|[주식 가격 예측하기](./exploration_13)           |2020-02-23|Time Series Data, ARIMA|
+|EXPLORATION_14|[폐렴 진단하기](./exploration_14)                |2020-02-25|Computer Vision, CNN   |
