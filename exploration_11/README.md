@@ -46,7 +46,8 @@ seq2seq 모델을 통해서 Abstractive summarization 방식의 텍스트 요약
 
 ---
 
-![images02](./images/images02.png)
+![images02](./images/images02.png)   
+
 LSTM이 바닐라 RNN과 다른 점은 다음 time step의 셀에 hidden state뿐만 아니라, cell state도 함께 전달한다는 점이다. 다시 말해, 인코더가 디코더에 전달하는 컨텍스트 벡터 또한 hidden state h와 cell state c 두 개의 값 모두 존재해야 한다는 뜻이다.
 
 ### 시작 토큰과 종료 토큰
