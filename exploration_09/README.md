@@ -545,7 +545,7 @@ def save_submission(model, train, y, test, model_name, rmsle=None):
 - FE를 잘 하려면 pandas를 자유자재로 쓸 줄 알아야 할 것 같다. 내가 원하는 feature를 만들고 싶어도 만드는 방법을 모르면 아무 소용없기 때문이다.
 - 사이킷런에 있는 회귀 앙상블 모델은 거의 다 써본 것 같은데 xgb와 lgb가 월등하게 성능이 좋아서 이 두 모델을 섞은 Voting 모델을 사용하여 최종 제출하였다. RMSE는 xgb가 더 좋았지만 Private Score는 Voting 모델쪽이 더 좋은 것으로 나왔다. 아무래도 xgb는 test set에 과적합 된 것 같다.
 
-유용한 링크
+### 유용한 링크
 
 [https://datascienceschool.net/01 python/04.03 데이터프레임 고급 인덱싱.html?highlight=데이터프레임 고급 인덱싱](https://datascienceschool.net/01%20python/04.03%20%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%20%EA%B3%A0%EA%B8%89%20%EC%9D%B8%EB%8D%B1%EC%8B%B1.html?highlight=%EB%8D%B0%EC%9D%B4%ED%84%B0%ED%94%84%EB%A0%88%EC%9E%84%20%EA%B3%A0%EA%B8%89%20%EC%9D%B8%EB%8D%B1%EC%8B%B1)
 
