@@ -337,7 +337,7 @@ explain = als_model.explain(user, csr_data, itemid=rihanna)
 - 모델을 훈련하여 실제로 추천받은 목록을 보니 토이스토리를 골랐을 때 토이스토리2, 벅스라이프, 알라딘 등을 추천해주는 걸 보면 만화애니메이션 장르쪽을 추천해주고 있다. 따라서 훈련이 잘 이루어졌다고 평가할 수 있을 것 같다.
 - csr_data를 만들 때 shape 에서 Error가 발생하는 이유를 알아냈다. 그 원인은 csr_data의 (row_ind, col_ind) parameter가 max(row_ind), max(col_ind)로 작동하여 row_ind와 col_ind의 index의 최댓값을 사용하기 때문이다. 물론 row와 col이 index 순으로 잘 정렬되어 있다면 이렇게 해도 문제가 없지만, 실제로는 movie_id의 중간에 빠진 index들이 있기 때문에 movie_id의 총 갯수인 3628개 보다 큰 max(row_ind)의 3953개가 parameter로 사용되는 것이다. user_id도 마찬가지로 unique한 값은 6040개지만, index가 1부터 시작하여 끝값은 6041이므로 총 6042개를 col_ind로 사용하게 된다. 이 부분은 수정해보려고 했으나, movie_id마다 이미 할당된 title이 있기 때문에 ratings DataFrame에 다시 movie_id에 맞는 title column을 더해주고 movie_id순으로 중복을 제거하고 sort하여 title에 다시 movie_id를 할당해 주는 작업이 너무 번거로워서 그만뒀다.
 
-유용한 링크
+### 유용한 링크
 
 [https://orill.tistory.com/entry/Explicit-vs-Implicit-Feedback-Datasets?category=1066301](https://orill.tistory.com/entry/Explicit-vs-Implicit-Feedback-Datasets?category=1066301) 명시적/암묵적 평가
 
