@@ -22,3 +22,5 @@
 |EXPLORATION_14|[폐렴 진단하기](./exploration_14)                |2020-02-25|Computer Vision, CNN   |
 |EXPLORATION_15|[트랜스포머로 만드는 대화형 챗봇](./exploration_15)|2020-03-02|Chatbot, RNN, Attention, Transfomer|
 |EXPLORATION_16|[흐린 사진을 선명하게 만들기](./exploration_16)   |2020-03-04|Super Resolution, SRCNN, SRGAN|
+|EXPLORATION_17|[다음에 볼 영화 예측하기](./exploration_17)       |2020-03-09|Session-Based Recommentaion|
+|EXPLORATION_18|[문자를 읽을 수 있는 딥러닝](./exploration_18)    |2020-03-11|CNN, OCR                |
