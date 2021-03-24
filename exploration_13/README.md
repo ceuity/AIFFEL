@@ -39,15 +39,15 @@ $$ Y = \lbrace Y_t: t ∈ T \rbrace \text{, where }T\text{ is the index set} �
 
 1. 시간의 추이와 관계 없이 평균이 불변
 
-    ![images00.png](./images00.png)
+    ![images00.png](./images/images00.png)
 
 2. 시간의 추이와 관계 없이 분산이 불변
 
-    ![images01.png](./images01.png)
+    ![images01.png](./images/images01.png)
 
 3. 두 시점 간의 공분산이 기준 시점과 무관
 
-    ![images02.png](./images02.png)
+    ![images02.png](./images/images02.png)
 
 ## 시계열 데이터 사례분석
 
@@ -107,7 +107,7 @@ print(ts1[ts1.isna()])
 plt.plot(ts1)
 ```
 
-![images03.png](./images03.png)
+![images03.png](./images/images03.png)
 
 ```python
 # 일정 구간 내 통계치(Rolling Statistics)를 시각화
@@ -127,7 +127,7 @@ def plot_rolling_statistics(timeseries, window=12):
 plot_rolling_statistics(ts1, window=12)
 ```
 
-![images04.png](./images04.png)
+![images04.png](./images/images04.png)
 
 시간에 따라 일정한 평균, 분산, 자기공분산의 패턴이 나타나는 것 처럼 보이므로 안정적인 시계열 데이터로 볼 수 있을 것이다. 좀 더 명확하게 하려면 통계적 접근이 필요하다.
 
@@ -148,7 +148,7 @@ plt.plot(ts2)
 plot_rolling_statistics(ts2, window=12)
 ```
 
-![images05.png](./images05.png)
+![images05.png](./images/images05.png)
 
 위의 사례와는 달리 시간의 추이에 따라 평균과 분산이 증가하는 패턴을 보인다면 이 시계열 데이터는 적어도 안정적이진 않다고 정성적인 결론을 내려볼 수 있을 것 같다. 이런 불안정적(Non-Stationary) 시계열 데이터에 대한 시계열 분석 기법도 알아보자.
 
@@ -287,7 +287,7 @@ dtype: float64
 """
 ```
 
-![images06.png](./images06.png)
+![images06.png](./images/images06.png)
 
 p-value가 0.02 수준이 되었으므로, 95% 이상의 confidence로 이 time series는 stationary하다고 할 수 있을 것이다. 그러나 지금까지의 접근에서 한가지 숨겨진 문제점이 있다. 바로 Moving Average를 계산하는 window=12로 정확하게 지정해 주어야 한다는 점이다. 만약 위 코드에서 window=6을 적용하면 다음과 같은 결과가 나온다.
 
@@ -313,7 +313,7 @@ dtype: float64
 """
 ```
 
-![images07.png](./images07.png)
+![images07.png](./images/images07.png)
 
 그래프를 정성적으로 분석해서는 window=12일 때와 별 차이를 느낄수 없지만 Augmented Dickey-Fuller Test의 결과 p-value는 0.18 수준이어서 아직도 안정적 시계열이라고 말할 수 없게 되었다.
 
@@ -421,7 +421,7 @@ dtype: float64
 
 **AR(자기회귀, Autoregressive)**
 
-![images08.png](./images08.png)
+![images08.png](./images/images08.png)
 
 - 자기회귀(AR)란, $Y_t$가 이전 p개의 데이터 $Y_{t-1},Y_{t-2}, ..., Y_{t-p}$의 가중합으로 수렴한다고 보는 모델이다.
 - 가중치의 크기가 1보다 작은 $Y_{t-1},Y_{t-2}, ..., Y_{t-p}$의 가중합으로 수렴하는 자기회귀 모델과 안정적 시계열은 동계적으로 동치이다.
@@ -430,7 +430,7 @@ dtype: float64
 
 **MA(이동평균, Moving Average)**
 
-![images09.png](./images09.png)
+![images09.png](./images/images09.png)
 
 - 이동평균(MV)은 $Y_t$가 이전 q개의 예측오차값 $e_{t-1},e_{t-2}, ..., e_{t-q}$의 가중합으로 수렴한다고 보는 모델이다.
 - MA는 일반적인 시계열에서 Trend에 해당하는 부분을 모델링한다고 볼 수 있다. 예측오차값 $e_{t-1}$이 +라면 모델 예측보다 관측값이 더 높았다는 뜻이므로, 다음 $Y_t$ 예측 시에는 예측지를 올려잡게 된다.
@@ -469,13 +469,13 @@ plt.show()
 
 ```
 
-![images010.png](./images010.png)
+![images010.png](./images/images010.png)
 
-![images011.png](./images011.png)
+![images011.png](./images/images011.png)
 
 아래 그림은 `ACF`를 통해 MA 모델의 시차 q를 결정하고, `PACF`를 통해 AR 모델의 시차 p를 결정할 수 있음을 통계학적으로 설명하는 아티클에서 요약결론 부분만 가져온 것이다.
 
-![images012.png](./images012.png)
+![images012.png](./images/images012.png)
 
 이 결론에 따라 보자면 PACF 그래프를 볼 때 p=1이 매우 적합한 것 같다. p가 2 이상인 구간에서 PACF는 거의 0에 가까워지고 있기 때문이다. PACF가 0이라는 의미는 현재 데이터와 p 시점 떨어진 이전의 데이터는 상관도가 0, 즉 아무 상관 없는 데이터이기 때문에 고려할 필요가 없다는 뜻이다.
 
@@ -579,7 +579,7 @@ plt.legend()
 plt.show()
 ```
 
-![images013.png](./images013.png)
+![images013.png](./images/images013.png)
 
 최종적인 모델의 오차율을 계산하려면, 그동안 로그 변환된 시계열을 사용해 왔던 것을 모두 지수 변환하여 원본의 스케일로 계산해야 타당하다. np.exp()를 통해 전부 원본 스케일로 돌린 후 MSE, MAE, RMSE, MAPE를 계산한다.
 
