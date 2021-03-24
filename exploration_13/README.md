@@ -22,7 +22,7 @@
 
 위 예시의 공통점은 예측 근거가 되는 시계열(Time-Series) 데이터가 있다는 것이다. 시계열 데이터란 시간 순서대로 발생한 데이터의 수열이라는 뜻이다.
 
-$$ Y = \lbrace Y_t: t ∈ T \rbrace \text{, where }T\text{ is the index set}  $$
+![image](https://user-images.githubusercontent.com/59816802/112323896-8f100500-8cf5-11eb-8515-063ef6bb7e85.png)
 
 일정 시간 간격으로 발생한 데이터 뿐만 아니라 매일의 주식 거래 가격을 날짜-가격 형태로 날짜순으로 모아둔 데이터가 있다면 이 데이터도 마찬가지로 훌륭한 시계열 데이터가 될 것이다.
 
