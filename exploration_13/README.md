@@ -469,13 +469,13 @@ plt.show()
 
 ```
 
-![images010.png](./images/images010.png)
+![images10.png](./images/images10.png)
 
-![images011.png](./images/images011.png)
+![images11.png](./images/images11.png)
 
 아래 그림은 `ACF`를 통해 MA 모델의 시차 q를 결정하고, `PACF`를 통해 AR 모델의 시차 p를 결정할 수 있음을 통계학적으로 설명하는 아티클에서 요약결론 부분만 가져온 것이다.
 
-![images012.png](./images/images012.png)
+![images12.png](./images/images12.png)
 
 이 결론에 따라 보자면 PACF 그래프를 볼 때 p=1이 매우 적합한 것 같다. p가 2 이상인 구간에서 PACF는 거의 0에 가까워지고 있기 때문이다. PACF가 0이라는 의미는 현재 데이터와 p 시점 떨어진 이전의 데이터는 상관도가 0, 즉 아무 상관 없는 데이터이기 때문에 고려할 필요가 없다는 뜻이다.
 
@@ -579,7 +579,7 @@ plt.legend()
 plt.show()
 ```
 
-![images013.png](./images/images013.png)
+![images13.png](./images/images13.png)
 
 최종적인 모델의 오차율을 계산하려면, 그동안 로그 변환된 시계열을 사용해 왔던 것을 모두 지수 변환하여 원본의 스케일로 계산해야 타당하다. np.exp()를 통해 전부 원본 스케일로 돌린 후 MSE, MAE, RMSE, MAPE를 계산한다.
 
