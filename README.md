@@ -26,5 +26,3 @@
 |EXPLORATION_18|[문자를 읽을 수 있는 딥러닝](./exploration_18)    |2020-03-11|CNN, OCR                |
 |EXPLORATION_19|[인간보다 퀴즈를 잘 푸는 인공지능](./exploration_19) |2020-03-16|RNN, LSTM, BERT      |
 |EXPLORATION_20|[난 스케치를 할테니 넌 채색을 하거라](./exploration_20)|2020-03-18|GAN, cGAN           |
-
-### 아직 업데이트 되지 않은 부분은 평가 완료 후 공개합니다.
