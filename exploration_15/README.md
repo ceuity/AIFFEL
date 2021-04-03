@@ -159,7 +159,7 @@ plt.show()
 
 프랜스포머에서는 어텐션 값을 구하는 방법으로 다음과 같은 수식을 사용한다.
 
-$$Attention(Q,K,V) = softmax \left( \frac {QK^T} {\sqrt{d_k}} \right) V$$
+![](https://latex.codecogs.com/png.latex?Attention(Q,K,V)%20=%20softmax%20\left(%20\frac%20{QK^T}%20{\sqrt{d_k}}%20\right)%20V)
 
 위 수식은 내적(Dot Product)을 통해 단어 벡터 간 유사도를 구한 후에, 특정 값을 분모로 나눠주는 방식으로 Q와 K의 유사도를 구하였다고 하여 스케일드 닷 프로덕트 어텐션(Scaled Dot Product Attention)이라고 한다. 만약 분모에 특정 값을 나눠주는 부분을 사용하지 않았다면 닷 프로적트 어텐션(Dot Product Attention)이라고 부른다.
 
@@ -872,7 +872,7 @@ def loss_function(y_true, y_pred):
 
 논문에 나온 공식을 참고하여 커스텀 학습률 스케줄러를 통한 Adam 옵티마이저를 사용하며, 논문에 나온 공식은 다음과 같다.
 
-$$lrate = d_{model}^{-0.5} \cdot min(step\_num^{-0.5}, step\_num \cdot warmup\_steps^{-1.5})$$
+![](https://latex.codecogs.com/svg.latex?lrate%20=%20d_{model}^{-0.5}%20\cdot%20min(step\_num^{-0.5},%20step\_num%20\cdot%20warmup\_steps^{-1.5}))
 
 ```python
 # 커스텀된 학습률
