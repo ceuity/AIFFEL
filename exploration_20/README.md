@@ -34,7 +34,7 @@ Conditional Generative Adversarial Nets (cGAN)은 내가 원하는 종류의 이
 
 GAN 구조는 Generator 및 Discriminator라 불리는 두 신경망이 Minimax Game을 통해 서로 경쟁하며 발전한다. 이를 아래와 같은 식으로 나타낼 수 있으며 Generator는 이 식을 최소화하려, Discriminator는 이 식을 최대화하려 학습한다.
 
-$$\min_G \max_D V(D,G) = \mathbb{E}_{x\sim p_{data}~(x)}[log D(x)] + \mathbb{E}_{z\sim p_x(z)}[log(1-D(G(z)))]$$
+![](https://latex.codecogs.com/svg.latex?\min_G%20\max_D%20V(D,G)%20=%20\mathbb{E}_{x\sim%20p_{data}~(x)}[log%20D(x)]%20+%20\mathbb{E}_{z\sim%20p_x(z)}[log(1-D(G(z)))])
 
 위 식에서 z는 임이의 노이즈를, D와 G는 각각 Discriminator 및 Generator를 의미한다. 위 식은 D가 진짜 데이터(x)를 진짜로, 가짜 데이터(G(z))를 가짜로 정확히 예측하도록 학습하며, G는 D(G(z))가 1이 되도록 학습해야 한다.
 
@@ -44,7 +44,7 @@ $$\min_G \max_D V(D,G) = \mathbb{E}_{x\sim p_{data}~(x)}[log D(x)] + \mathbb{E}_
 
 GAN과 비교하여 cGAN의 목적함수는 다음과 같다.
 
-$$\min_G \max_D V(D,G) = \mathbb{E}_{x\sim p_{data}~(x)}[log D(x\lvert{y})] + \mathbb{E}_{z\sim p_x(z)}[log(1-D(G(z\lvert{y})))]$$
+![](https://latex.codecogs.com/svg.latex?\min_G%20\max_D%20V(D,G)%20=%20\mathbb{E}_{x\sim%20p_{data}~(x)}[log%20D(x\lvert{y})]%20+%20\mathbb{E}_{z\sim%20p_x(z)}[log(1-D(G(z\lvert{y})))])
 
 G와 D의 입력에 특정 조건을 나타내는 정보인 y가 양쪽 항에 추가되었다. 각각 y를 추가로 입력받아 G의 입장에서 식을 최소화하고, D의 입장에서 식을 최대화하도록 학습한다. 여기서 함께 입력하는 y는 어떤 정보여도 상관없으며, MNIST 데이터셋을 학습시키는 경우 y는 0~9까지의 label 정보가 된다. Generator가 어떠한 노이즈 z를 입력받았을 때, 특정 조건 y가 함께 입력되기 때문에 y를 통해 z를 어떤 이미지로 만들어야 할지에 대한 방향을 제어할 수 있게 된다.
 
