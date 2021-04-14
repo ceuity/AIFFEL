@@ -66,7 +66,7 @@ Neural Style Transfer는 스타일을 변환시키는 기법이다. Style Transf
 
 ![images03](./images/images03.png)
 
-## Fashoin MNIST Dataset
+## Fashion MNIST Dataset
 
 ---
 
