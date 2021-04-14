@@ -28,14 +28,14 @@
 |EXPLORATION_19|[인간보다 퀴즈를 잘 푸는 인공지능](./exploration_19) |2020-03-16|RNN, LSTM, BERT      |
 |EXPLORATION_20|[난 스케치를 할테니 넌 채색을 하거라](./exploration_20)|2020-03-18|GAN, cGAN           |
 
-## GOING DEERPER
+## GOING DEEPER
 
-|                |               Project Name                       |  Date    |              Experience           |
-|:--------------:|:------------------------------------------------:|:--------:|:---------------------------------:|
-|GOING DEERPER_01|[백본 네트워크 구조 상세 분석](./going_deeper_01)   |2020-04-05|VGGNet, ResNet, SENet, EfficientNet|
-|GOING DEERPER_02|[ResNet Ablation Study](./going_deeper_02)        |2020-04-06|ResNet, Ablation Study             |
-|GOING DEERPER_03|[Augmentation](./going_deeper_03)                 |2020-04-08|Data Augmentation, imgaug          |
-|GOING DEERPER_04|[Augmentation 2](./going_deeper_04)               |2020-04-09|Data Augmentation, Cutmix, Mixup   |
-|GOING DEERPER_05|[Object Detection](./going_deeper_05)             |2020-04-12|Object Detection                   |
-|GOING DEERPER_06|[Object Detection 시스템 만들기](./going_deeper_06)|2020-04-13|Object Detection, RetinaNet        |
+|               |               Project Name                       |  Date    |              Experience           |
+|:-------------:|:------------------------------------------------:|:--------:|:---------------------------------:|
+|GOING DEEPER_01|[백본 네트워크 구조 상세 분석](./going_deeper_01)   |2020-04-05|VGGNet, ResNet, SENet, EfficientNet|
+|GOING DEEPER_02|[ResNet Ablation Study](./going_deeper_02)        |2020-04-06|ResNet, Ablation Study             |
+|GOING DEEPER_03|[Augmentation](./going_deeper_03)                 |2020-04-08|Data Augmentation, imgaug          |
+|GOING DEEPER_04|[Augmentation 2](./going_deeper_04)               |2020-04-09|Data Augmentation, Cutmix, Mixup   |
+|GOING DEEPER_05|[Object Detection](./going_deeper_05)             |2020-04-12|Object Detection                   |
+|GOING DEEPER_06|[Object Detection 시스템 만들기](./going_deeper_06)|2020-04-13|Object Detection, RetinaNet        |
 
