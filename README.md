@@ -38,6 +38,8 @@
 |GOING DEEPER_04|[Augmentation 2](./going_deeper_04)               |2021-04-09|Data Augmentation, Cutmix, Mixup   |
 |GOING DEEPER_05|[Object Detection](./going_deeper_05)             |2021-04-12|Object Detection                   |
 |GOING DEEPER_06|[Object Detection 시스템 만들기](./going_deeper_06)|2021-04-13|Object Detection, RetinaNet        |
-|GOING DEEPER_07|[Class Activation Map](./going_deeper_07)         |2021-04-19|XAI, CAM, Grad-CAM                 |
-|GOING DEEPER_08|[Class Activation Map 만들기](./going_deeper_08)  |2021-04-20|CAM, Grad-CAM                       |
+|GOING DEEPER_07|[Segmentation](./going_deeper_07)                 |2021-04-15|Segmentation, U-Net                |
+|GOING DEEPER_08|[Segmentation 2](./going_deeper_08)               |2021-04-16|Segmentation, U-Net++              |
+|GOING DEEPER_09|[Class Activation Map](./going_deeper_09)         |2021-04-19|XAI, CAM, Grad-CAM                 |
+|GOING DEEPER_10|[Class Activation Map 만들기](./going_deeper_10)  |2021-04-20|CAM, Grad-CAM                       |
 
