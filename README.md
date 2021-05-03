@@ -46,5 +46,8 @@
 |GOING DEEPER_12|[직접 만들어보는 OCR](./going_deeper_12)           |2021-04-23|OCR, Text Detection, Text Recognition|
 |GOING DEEPER_13|[내가 만든 카메라앱, 무엇이 문제일까?](./going_deeper_13)|2021-04-26|Face Landmark, OpenCV           |
 |GOING DEEPER_14|[카메라 스티커앱을 개선하자](./going_deeper_14)    |2021-04-27|Face Landmark, OpenCV, Karman Filter |
+|GOING DEEPER_15|[데이터를 직접 모아보자](./going_deeper_15)        |2021-04-29|Annotation tools                     |
+|GOING DEEPER_16|[불안한 시선 이펙트 추가하기](./going_deeper_16)   |2021-04-30|OpenCV, dlib, Mean-shift             |
+|GOING DEEPER_17|[카메라 스티커앱을 개선하자](./going_deeper_17)    |2021-05-03|Face Detection, YOLO, SSD            |
 
 
