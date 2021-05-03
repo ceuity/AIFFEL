@@ -42,4 +42,9 @@
 |GOING DEEPER_08|[Segmentation 2](./going_deeper_08)               |2021-04-16|Segmentation, U-Net++              |
 |GOING DEEPER_09|[Class Activation Map](./going_deeper_09)         |2021-04-19|XAI, CAM, Grad-CAM                 |
 |GOING DEEPER_10|[Class Activation Map 만들기](./going_deeper_10)  |2021-04-20|CAM, Grad-CAM                       |
+|GOING DEEPER_11|[OCR 기술의 개요](./going_deeper_11)               |2021-04-22|OCR, Text Detection, Text Recognition|
+|GOING DEEPER_12|[직접 만들어보는 OCR](./going_deeper_12)           |2021-04-23|OCR, Text Detection, Text Recognition|
+|GOING DEEPER_13|[내가 만든 카메라앱, 무엇이 문제일까?](./going_deeper_13)|2021-04-26|Face Landmark, OpenCV           |
+|GOING DEEPER_14|[카메라 스티커앱을 개선하자](./going_deeper_14)    |2021-04-27|Face Landmark, OpenCV, Karman Filter |
+
 
