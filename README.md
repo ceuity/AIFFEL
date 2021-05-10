@@ -48,6 +48,9 @@
 |GOING DEEPER_14|[카메라 스티커앱을 개선하자](./going_deeper_14)    |2021-04-27|Face Landmark, OpenCV, Karman Filter |
 |GOING DEEPER_15|[데이터를 직접 모아보자](./going_deeper_15)        |2021-04-29|Annotation tools                     |
 |GOING DEEPER_16|[불안한 시선 이펙트 추가하기](./going_deeper_16)   |2021-04-30|OpenCV, dlib, Mean-shift             |
-|GOING DEEPER_17|[카메라 스티커앱을 개선하자](./going_deeper_17)    |2021-05-03|Face Detection, YOLO, SSD            |
+|GOING DEEPER_17|[멀리 있지만 괜찮아](./going_deeper_17)            |2021-05-03|Face Detection, YOLO, SSD            |
+|GOING DEEPER_18|[멀리 있는 사람도 스티커를 붙여주자](./going_deeper_18)|2021-05-04|Face Detection, SSD               |
+|GOING DEEPER_19|[사람의 몸짓을 읽어보자](./going_deeper_19)        |2021-05-06|Pose Estimation                      |
+|GOING DEEPER_20|[행동 스티커 만들기](./going_deeper_20)            |2021-05-07|Pose Estimation, Hourglass, Simplebaseline|
 
 
