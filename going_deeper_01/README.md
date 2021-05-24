@@ -113,7 +113,7 @@ Pre-activation 개념은 [Identity Mappings in Deep Residual Networks](https://a
 
 - [라온피플 머신러닝 아카데미 - 8. ResNet (pre-activation 섹션)](https://m.blog.naver.com/laonple/220793640991)
 
-![images010.png](./images/images010.png)
+![images10.png](./images/images10.png)
 
 ### 2) Growth Rate
 
@@ -137,19 +137,19 @@ Pre-activation 개념은 [Identity Mappings in Deep Residual Networks](https://a
 - [참고: Attention and Memory in Deep Learning and NLP by Denny Britz](http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/)
 - [참고: 십분딥러닝_12_어텐션(Attention Mechanism)](https://www.youtube.com/watch?v=6aouXD8WMVQ)
 
-![images011.png](./images/images011.png)
+![images11.png](./images/images11.png)
 
 ### 1) Squeeze
 
 ---
 
-![images012.png](./images/images012.png)
+![images12.png](./images/images12.png)
 
 Squeeze 는 말 그대로 특성에서 중요한 정보를 짜내는 과정이다. 특성 맵의 채널에서 어느 채널이 중요한지 정보를 만들기 위해서는 우선 채널에 따른 정보를 압축해서 가져와야 할 것이다.
 
 채널별 정보를 압축하는 방법은 일반 CNN에서도 많이 사용하듯, 풀링(pooling) 기법을 사용한다. 풀링은 보통 커널(kernel) 영역의 정보를 압축하는 데 사용하기 때문이다. 커널 영역에 대해 최댓값만 남기는 것이 Max Pooling, 평균값을 남기는 것이 Average Pooling이다.
 
-![images013.png](./images/images013.png)
+![images13.png](./images/images13.png)
 
 여기서 "Squeeze"는 $F_{sq}$함수에서 일어난다. $F_{tr}$이라는 컨볼루션 레이어를 거치면 "HxWxC"의 크기를 가진 특성 맵 U가 나온다. U에 Squeeze를 적용하면 "1x1xC"의 크기가 나오게 된다. 벡터의 차원으로 볼 수 있듯이 각 채널별로 딱 1개의 숫자만 남도록 2D 특성맵 전체에 대해 평균값을 남기는 global average pooling을 수행한다. 이렇게 얻어진 "1x1xC"의 벡터는 채널별 정보를 압축해 담고 있다.
 
@@ -159,7 +159,7 @@ Squeeze 는 말 그대로 특성에서 중요한 정보를 짜내는 과정이�
 
 채널을 강조하는 것을 논문에서는 "excitation"으로 표현하며, 수식은 다음과 같다.
 
-![images014.png](./images/images014.png)
+![images14.png](./images/images14.png)
 
 - z는 위에서 global average pooling을 적용한 특성, 즉 "squeeze" 활동의 결과물이다.
 - 이 특성에 W1을 곱해주는 linear 레이어를 거치고 ReLU 활성화 함수 $\delta$를 거친다.
@@ -171,11 +171,11 @@ Squeeze 는 말 그대로 특성에서 중요한 정보를 짜내는 과정이�
 
 이렇게 계산된 벡터를 기존의 특성 맵에 채널에 따라서 곱해주어 중요한 채널이 활성화 되도록 만들어준다.
 
-![images015.png](./images/images015.png)
+![images15.png](./images/images15.png)
 
 ## 모델 최적화하기 (1) Neural Architecture Search
 
-![images016.png](./images/images016.png)
+![images16.png](./images/images16.png)
 
 지금까지 봤던 방법은 사람이 고안한 방식을 네트워크 구조에 적용하여 효과를 봤던 방법이다. 모델의 훈련은 컴퓨터가 시켜줄 수 있어도, 어떤 모델 구조가 좋을지는 사람이 직접 고민하고 실험해 보아야 할 것이다. 이렇게 새로운 모델 구조를 고안하고 이해하는 과정을 반복하다 보면, "우리가 딥러닝으로 이미지 분류 문제를 풀기 위해 딥러닝 모델의 파라미터(parameter)를 최적화해 왔듯이 모델의 구조 자체도 최적화할 수는 없을지" 생각하게 될 것이다. 이렇게 여러 가지 네트워크 구조를 탐색하는 것을 **아키텍쳐 탐색**(architecture search)라고 합니다. 그리고 그 중 신경망을 사용해 모델의 구조를 탐색하는 접근방법을 **NAS**(neural architecture search) 라고 한다.
 
@@ -194,7 +194,7 @@ NASNet과 같이 거창한 방법이 아니더라도, 일반적으로 머신 러
 
 NASNet이 NAS를 처음 적용한 것은 아니며 이전에도 논문들이 있었다. 이전의 방식들은 우리가 많이 접해왔던 MNIST에 최적화하는데 800개의 GPU를 사용해서 28일이 걸렸다고 한다. 그렇게 나온 구조가 아래의 그림이다.
 
-![images017.png](./images/images017.png)
+![images17.png](./images/images17.png)
 
 NASNet 논문은 이미지넷 데이터에 대해 이보다 짧은 시간 안에 최적화를 했다고 한다.
 
@@ -202,7 +202,7 @@ NASNet 논문은 이미지넷 데이터에 대해 이보다 짧은 시간 안에
 
 ---
 
-![images018.png](./images/images018.png)
+![images18.png](./images/images18.png)
 
 레이어 하나마다의 하이퍼 파라미터를 조절한다면 탐색 공간이 무지막지 방대해질 것이다. 탐색공간이 넓다는 말은 찾아야 할 영역이 넓다는 의미이고 넓은 곳에서 최적의 포인트를 찾는 데는 당연히 더 오랜 시간이 걸릴 것이다. NASNet 논문에서는 이러한 탐색공간을 줄이기 위해서 모듈(cell) 단위의 최적화를 하고 그 모듈을 조합하는 방식을 채택했다.
 
@@ -212,7 +212,7 @@ ResNet에는 Residual Block, DenseNet에는 Dense Block이라는 모듈이 사�
 
 ---
 
-![images019.png](./images/images019.png)
+![images19.png](./images/images19.png)
 
 - 원본 논문: [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946)
 - [hoya012님의 EfficientNet： Rethinking Model Scaling for Convolutional Neural Networks 리뷰](https://hoya012.github.io/blog/EfficientNet-review/)
@@ -227,7 +227,7 @@ EfficientNet은 우리가 이미지에 주로 사용하는 CNN을 효율적으�
 
 EfficientNet은 앞서 말한 **resolution**, **depth**, **width**를 최적으로 조정하기 위해서 앞선 NAS와 유사한 방법을 사용해 기본 모델(baseline network)의 구조를 미리 찾고 고정한다. 모델의 구조가 고정이 되면 효율적인 모델을 찾는다는 커다란 문제가, 개별 레이어의 **resolution**, **depth**, **width**를 조절해 기본 모델을 적절히 확장시키는 문제로 단순화된다.
 
-![images020.png](./images/images020.png)
+![images20.png](./images/images20.png)
 
 그리고 EfficientNet 논문에서는 **resolution**, **depth**, **width**라는 세 가지 "scaling factor"를 동시에 고려하는 compound scaling을 제안한다. 위 식에서 compound coefficient ϕ는 모델의 크기를 조정하기 위한 계수가 된다. 위 식을 통해 레이어의 resolution, depth, width를 각각 조정하는 것이 아니라 고정된 계수 ϕ에 따라서 변하도록 하면 보다 일정한 규칙에 따라(in a principled way) 모델의 구조가 조절되도록 할 수 있다.
 
