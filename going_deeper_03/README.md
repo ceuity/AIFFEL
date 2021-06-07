@@ -250,7 +250,7 @@ plt.imshow(random_bright_image)
 
 ## imgaug 라이브러리
 
-![images010.png](./images/images010.png)
+![images10.png](./images/images10.png)
 
 - [imgaug 라이브러리](https://github.com/aleju/imgaug)
 - [Overview of imgaug](https://imgaug.readthedocs.io/en/latest/source/overview_of_augmenters.html)
@@ -397,4 +397,4 @@ plt.show()
 
 - [The Effectiveness of Data Augmentation in Image Classification using Deep Learning](http://cs231n.stanford.edu/reports/2017/pdfs/300.pdf) by Jason Wang and Luis Perez
 
-![images011.png](./images/images011.png)
+![images11.png](./images/images11.png)
