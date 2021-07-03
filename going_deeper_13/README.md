@@ -421,8 +421,6 @@ def img2sticker_orig(img_orig, img_sticker, detector_hog, landmark_predictor):
 
 `dlib`은 HOG 특징 공간에서 **슬라이딩 윈도우(sliding window)** 기법을 통해 얼굴을 검출한다.
 
-![13%20%E1%84%82%E1%85%A2%E1%84%80%E1%85%A1%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AB%20%E1%84%8F%E1%85%A1%E1%84%86%E1%85%A6%E1%84%85%E1%85%A1%E1%84%8B%E1%85%A2%E1%86%B8,%20%E1%84%86%E1%85%AE%E1%84%8B%E1%85%A5%E1%86%BA%E1%84%8B%E1%85%B5%20%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%81%E1%85%A1%2097016ad75bdf4521ad7e63b51dbcb893/GC-7-L_sliding-window-animated-adrian.gif](13%20%E1%84%82%E1%85%A2%E1%84%80%E1%85%A1%20%E1%84%86%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%86%AB%20%E1%84%8F%E1%85%A1%E1%84%86%E1%85%A6%E1%84%85%E1%85%A1%E1%84%8B%E1%85%A2%E1%86%B8,%20%E1%84%86%E1%85%AE%E1%84%8B%E1%85%A5%E1%86%BA%E1%84%8B%E1%85%B5%20%E1%84%86%E1%85%AE%E1%86%AB%E1%84%8C%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%81%E1%85%A1%2097016ad75bdf4521ad7e63b51dbcb893/GC-7-L_sliding-window-animated-adrian.gif)
-
 - [Sliding Windows for Object Detection with Python and OpenCV - PyImageSearch](https://www.pyimagesearch.com/2015/03/23/sliding-windows-for-object-detection-with-python-and-opencv/)
 
 HOG 특성 맵(feature map)에서 입력 이미지 크기(HD: 1280x720)만큼 슬라이딩 윈도우를 수행하기 때문에 프로그램은
@@ -682,3 +680,5 @@ plt.ylabel('Velocity [m/s]')
 ![images10.png](./images/images10.png)
 
 왼쪽 그래프는 시간과 위치의 그래프이고 오른쪽은 시간과 속도의 그래프이다. 빨간색으로 표현된 실제 위치는 오차가 있기 때문에 노이즈가 있다. 반면 칼만 필터가 적용된 위치(파란색)는 안정적으로 나타나는 것을 볼 수 있다. 속도도 시스템 오차가 포함된 값에 비해 칼만 필터가 적용된 값이 실제`(20m/s)`에 가깝게 표현된다. 이 예제를 2차원으로 확장시키면 동영상에 동일하게 적용할 수 있다. 이를 이용하면 스티커앱의 동작을 직접 개선해 볼 수 있을 것이다.
+
+![gc-7-l-df_avc1.gif](./images/gc-7-l-df_avc1.gif)
