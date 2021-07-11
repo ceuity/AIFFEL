@@ -4,7 +4,7 @@
 
 오늘 우리가 Face Detection 모델의 학습을 위해 다루게 될 데이터셋은 바로 [WIDER FACE 데이터셋](http://shuoyang1213.me/WIDERFACE/index.html)이다. 빠른 인퍼런스 타임을 위해 사용할 YOLO, SSD 같은 single stage model을 학습시키는 것은 흔히 COCO 데이터셋 같은 것이 사용되겠지만, 오늘 우리가 추구하는 [먼 거리에 흩어져 있는 다수의 사람 얼굴을 빠르게 detect하는 모델]을 만들기 위해서는 그에 적합하게 '보다 넓은 공간에 있는 다수의 사람이 등장하는 이미지 데이터셋'이 필요할 것이다. 아래 그림에서 확인할 수 있듯, WIDER FACE 데이터셋은 그런 용도로 활용하기에 적절해 보인다.
 
-![images00.png](./images/images.png)
+![images00.png](./images/images00.png)
 
 마지막으로, 오늘의 실습코드를 프로젝트로 구성한 파일을 첨부했다. 위의 `face_detector.zip`을 다운로드하여 `~/aiffel/face_detector` 디렉토리에 압축이 풀리도록 하자.
 
